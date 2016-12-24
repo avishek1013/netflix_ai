@@ -1,3 +1,8 @@
+# Raw Data files
+*.dta
+*.idx
+
+
 # Compiled Object files
 *.slo
 *.lo
