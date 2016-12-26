@@ -15,3 +15,21 @@ cxx_library(
     'PUBLIC',
   ],
 )
+
+cxx_library(
+  name = 'movie_avg',
+  header_namespace = 'algorithm',
+  srcs = [
+    'movie_avg.cpp',
+  ],
+  exported_headers = [
+    'movie_avg.h',
+  ],
+  deps = [
+    '//source/algorithm/base:base_model',
+    '//source/util:data_constants',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)

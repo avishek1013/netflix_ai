@@ -11,7 +11,7 @@ void avg::predict(const int* testing_data, int* predictions, int num_rows) {
 void avg::train(const int* training_data, int num_rows) {
   auto avg = 0.0;
   for (auto i = 0; i < num_rows; i++) {
-    avg += training_data[i*COL_SIZE + COL_SIZE - 1];
+    avg += training_data[i*COL_SIZE + RATING_IND];
   }
 
   average = avg / num_rows;
