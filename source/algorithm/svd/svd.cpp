@@ -1,9 +1,9 @@
 #include "svd.h"
 
-void svd::train(arma::mat& training_data) {
+void svd::predict(const int* testing_data, int* predictions, int num_rows) {
 
 }
 
-void svd::predict(arma::mat& testing_data) {
+void svd::train(const int* training_data, int num_rows) {
 
 }

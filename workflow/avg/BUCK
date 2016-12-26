@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'avg_workflow',
+  srcs = [
+    'avg_workflow.cpp',
+  ],
+  deps = [
+    '//source/algorithm/avg:avg',
+    '//source/util:data_constants',
+    '//source/util:data_loader',
+    '//source/util:timer',
+  ],
+)

@@ -27,4 +27,10 @@ class timer
     void duration() {
       std::cout << elapsed.count() << " seconds" << std::endl;
     }
+
+    std::string return_elapsed() {
+      end = std::chrono::high_resolution_clock::now();
+      elapsed = end - begin;
+      return std::to_string(elapsed.count()) + " seconds\n";
+    }
 };

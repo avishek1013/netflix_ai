@@ -1,3 +1,2 @@
 [cxx]
   cxxflags = -std=c++11
-  ldflags = -lboost_iostreams

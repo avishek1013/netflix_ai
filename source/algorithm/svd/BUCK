@@ -2,15 +2,15 @@ cxx_library(
   name = 'svd',
   header_namespace = 'algorithm',
   srcs = [
-    'svd.cpp'
+    'svd.cpp',
   ],
   exported_headers = [
-    'svd.h'
+    'svd.h',
+  ],
+  deps = [
+    '//source/algorithm/base:base_model',
   ],
   visibility = [
     'PUBLIC',
-  ],
-  deps = [
-    '//source/algorithm/base:base_model'
   ],
 )

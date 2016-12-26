@@ -1,16 +1,17 @@
 cxx_library(
-  name = 'base_model',
+  name = 'avg',
   header_namespace = 'algorithm',
   srcs = [
-    'base_model.cpp'
+    'avg.cpp',
   ],
   exported_headers = [
-    'base_model.h'
+    'avg.h',
   ],
   deps = [
+    '//source/algorithm/base:base_model',
     '//source/util:data_constants',
   ],
   visibility = [
     'PUBLIC',
-  ]
+  ],
 )
