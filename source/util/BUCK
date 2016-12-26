@@ -1,0 +1,38 @@
+cxx_library(
+  name = 'data_constants',
+  header_namespace = 'util',
+  exported_headers = [
+    'data_constants.h'
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+cxx_library(
+  name = 'data_loader',
+  header_namespace = 'util',
+  srcs = [
+    'data_loader.cpp'
+  ],
+  exported_headers = [
+    'data_loader.h'
+  ],
+  deps = [
+    '//source/util:data_constants',
+  ],
+  visibility = [
+    'PUBLIC',
+  ]
+)
+
+cxx_library(
+  name = 'timer',
+  header_namespace = 'util',
+  exported_headers = [
+    'timer.h'
+  ],
+  visibility = [
+    'PUBLIC',
+  ]
+)

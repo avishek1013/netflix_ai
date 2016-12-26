@@ -1,7 +1,18 @@
 # Raw Data files
 *.dta
 *.idx
+*.bin
 
+# Mac specific files
+.DS_Store
+
+# Buck specific folders
+buck-out/*
+.buckd/*
+
+# Sublime specific files
+*.sublime-project
+*.sublime-workspace
 
 # Compiled Object files
 *.slo

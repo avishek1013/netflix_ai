@@ -1,0 +1,11 @@
+cxx_binary(
+  name = 'transform_data',
+  srcs = [
+    'transform_data.cpp',
+  ],
+  deps = [
+    '//source/util:data_constants',
+    '//source/util:data_loader',
+    '//source/util:timer',
+  ],
+)

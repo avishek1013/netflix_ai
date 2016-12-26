@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'svd_workflow',
+  srcs = [
+    'svd_workflow.cpp',
+  ],
+  deps = [
+    '//source/algorithm/svd:svd',
+    '//source/util:data_constants',
+    '//source/util:data_loader',
+    '//source/util:timer',
+  ],
+)

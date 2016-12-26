@@ -1,0 +1,13 @@
+cxx_library(
+  name = 'base_model',
+  header_namespace = 'algorithm',
+  srcs = [
+    'base_model.cpp'
+  ],
+  exported_headers = [
+    'base_model.h'
+  ],
+  visibility = [
+    'PUBLIC',
+  ]
+)

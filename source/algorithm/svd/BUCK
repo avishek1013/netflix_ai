@@ -1,0 +1,16 @@
+cxx_library(
+  name = 'svd',
+  header_namespace = 'algorithm',
+  srcs = [
+    'svd.cpp'
+  ],
+  exported_headers = [
+    'svd.h'
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+  deps = [
+    '//source/algorithm/base:base_model'
+  ],
+)
