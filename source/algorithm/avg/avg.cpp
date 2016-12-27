@@ -2,6 +2,8 @@
 
 #include "util/data_constants.h"
 
+avg::avg() : average{0.0} {}
+
 void avg::predict(const int* testing_data, int* predictions, int num_rows) {
   for (auto i = 0; i < num_rows; i++) {
     predictions[i] = average;

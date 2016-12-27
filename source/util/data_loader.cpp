@@ -4,8 +4,7 @@
 
 #include "util/data_constants.h"
 
-void data_loader::load_data(const std::string& data_filename, int* data,
-  int length) {
+void data_loader::load_data(const std::string& data_filename, int* data, int length) {
   auto data_fp = fopen(data_filename.c_str(), "rb");
   fread(data, sizeof(int), length, data_fp);
   fclose(data_fp);
