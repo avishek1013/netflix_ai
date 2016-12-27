@@ -5,9 +5,7 @@ cxx_binary(
   ],
   deps = [
     '//source/algorithm/avg:avg',
-    '//source/util:data_constants',
-    '//source/util:data_loader',
-    '//source/util:timer',
+    '//workflow/source:train_test_workflow',
   ],
 )
 
@@ -18,8 +16,6 @@ cxx_binary(
   ],
   deps = [
     '//source/algorithm/avg:movie_avg',
-    '//source/util:data_constants',
-    '//source/util:data_loader',
-    '//source/util:timer',
+    '//workflow/source:train_test_workflow',
   ],
 )

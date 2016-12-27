@@ -1,0 +1,36 @@
+cxx_library(
+  name = 'base_workflow',
+  header_namespace = 'workflow',
+  srcs = [
+    'base_workflow.cpp',
+  ],
+  exported_headers = [
+    'base_workflow.h',
+  ],
+  deps = [
+    '//source/algorithm/base:base_model',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+cxx_library(
+  name = 'train_test_workflow',
+  header_namespace = 'workflow',
+  srcs = [
+    'train_test_workflow.cpp',
+  ],
+  exported_headers = [
+    'train_test_workflow.h',
+  ],
+  deps = [
+    '//source/util:data_constants',
+    '//source/util:data_loader',
+    '//source/util:timer',
+    '//workflow/source:base_workflow',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
