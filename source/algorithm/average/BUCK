@@ -1,11 +1,11 @@
 cxx_library(
-  name = 'avg',
+  name = 'average_model',
   header_namespace = 'algorithm',
   srcs = [
-    'avg.cpp',
+    'average_model.cpp',
   ],
   exported_headers = [
-    'avg.h',
+    'average_model.h',
   ],
   deps = [
     '//source/algorithm/base:base_model',
@@ -17,13 +17,13 @@ cxx_library(
 )
 
 cxx_library(
-  name = 'movie_avg',
+  name = 'average_movie_model',
   header_namespace = 'algorithm',
   srcs = [
-    'movie_avg.cpp',
+    'average_movie_model.cpp',
   ],
   exported_headers = [
-    'movie_avg.h',
+    'average_movie_model.h',
   ],
   deps = [
     '//source/algorithm/base:base_model',

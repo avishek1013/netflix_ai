@@ -1,21 +1,21 @@
-#include "movie_avg.h"
+#include "average_movie_model.h"
 
 #include <algorithm>
 
-movie_avg::movie_avg() : averages{new double[MOVIE_SIZE]} {}
+average_movie_model::average_movie_model() : averages{new double[MOVIE_SIZE]} {}
 
-movie_avg::~movie_avg() {
+average_movie_model::~average_movie_model() {
   delete[] averages;
 }
 
-void movie_avg::predict(const int* testing_data, int* predictions, int num_rows) {
+void average_movie_model::predict(const int* testing_data, int* predictions, int num_rows) {
   for (auto i = 0; i < num_rows; i++) {
     auto ind = testing_data[i*COL_SIZE + MOVIE_IND] - 1;
     predictions[i] = averages[ind];
   }
 }
 
-void movie_avg::train(const int* training_data, int num_rows) {
+void average_movie_model::train(const int* training_data, int num_rows) {
   auto counts = new int[MOVIE_SIZE];
   std::fill(averages, averages + MOVIE_SIZE, 0.0);
   std::fill(counts, counts + MOVIE_SIZE, 0);

@@ -1,0 +1,21 @@
+cxx_binary(
+  name = 'average_workflow',
+  srcs = [
+    'average_workflow.cpp',
+  ],
+  deps = [
+    '//source/algorithm/average:average_model',
+    '//workflow/source:train_test_workflow',
+  ],
+)
+
+cxx_binary(
+  name = 'average_movie_workflow',
+  srcs = [
+    'average_movie_workflow.cpp',
+  ],
+  deps = [
+    '//source/algorithm/average:average_movie_model',
+    '//workflow/source:train_test_workflow',
+  ],
+)
