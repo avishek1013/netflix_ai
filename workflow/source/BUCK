@@ -8,7 +8,7 @@ cxx_library(
     'base_workflow.h',
   ],
   deps = [
-    '//source/algorithm/base:base_model',
+    '//source/model/base:base_model',
   ],
   visibility = [
     'PUBLIC',

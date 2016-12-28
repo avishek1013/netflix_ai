@@ -1,4 +1,4 @@
-#include "algorithm/average_movie_model.h"
+#include "model/average_movie_model.h"
 #include "workflow/train_test_workflow.h"
 
 int main(int argc, char const *argv[])

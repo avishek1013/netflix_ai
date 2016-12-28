@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "algorithm/svd.h"
+#include "model/svd.h"
 #include "util/data_constants.h"
 #include "util/data_loader.h"
 #include "util/timer.h"

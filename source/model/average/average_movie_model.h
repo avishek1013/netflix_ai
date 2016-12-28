@@ -1,6 +1,6 @@
 #pragma once
 
-#include "algorithm/base_model.h"
+#include "model/base_model.h"
 #include "util/data_constants.h"
 
 class average_movie_model : public base_model

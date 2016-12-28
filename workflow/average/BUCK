@@ -4,7 +4,7 @@ cxx_binary(
     'average_workflow.cpp',
   ],
   deps = [
-    '//source/algorithm/average:average_model',
+    '//source/model/average:average_model',
     '//workflow/source:train_test_workflow',
   ],
 )
@@ -15,7 +15,7 @@ cxx_binary(
     'average_movie_workflow.cpp',
   ],
   deps = [
-    '//source/algorithm/average:average_movie_model',
+    '//source/model/average:average_movie_model',
     '//workflow/source:train_test_workflow',
   ],
 )

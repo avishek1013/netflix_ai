@@ -1,6 +1,6 @@
 #pragma once
 
-#include "algorithm/base_model.h"
+#include "model/base_model.h"
 
 class base_workflow
 {
